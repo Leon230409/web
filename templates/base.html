@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Главная - Leon4ik Studio</title>
+</head>
+<body>
+    <!-- Шапка с названием студии -->
+    <header>
+        <a href="/" class="logo">Leon4ik Studio</a>
+    </header>
+
+    <!-- Меню с разделами -->
+    <div class="menu">
+        <a href="/films" class="menu-item">Фильмы</a>
+        <a href="/games" class="menu-item">Игры</a>
+        <a href="/another" class="menu-item">Другие Проекты</a>
+        <a href="/about" class="menu-item">О нас</a>
+    </div>
+      <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    {% block footer %}
+    <!-- Блок футера можно переопределять -->
+    {% endblock %}
+
+</body>
+</html>

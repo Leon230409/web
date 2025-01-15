@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Фильмы - Leon4ik Studio</title>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo">Leon4ik Studio</a>
+    </header>
+
+    <main>
+        <h1>Фильмы</h1>
+        <div class="movies-grid">
+            <!-- Первый фильм -->
+            <div class="movie-card">
+                <a href="/films/galactic-battles" class="movie-link">
+                    <img src="{{ url_for('static', filename='images/постер.png') }}" alt="Галактические Битвы (2022)">
+                    <h2>Галактические Битвы (2022)</h2>
+                    <div class="rating">⭐ 8.5 📈</div>
+                </a>
+            </div>
+
+            <!-- Второй фильм -->
+            <div class="movie-card">
+                <a href="/films/charles" class="movie-link">
+                    <img src="{{ url_for('static', filename='images/poster 2.1.png') }}" alt="Чарльз (2023)">
+                    <h2>Чарльз (2023)</h2>
+                    <div class="rating">⭐ 9.0 📈</div>
+                </a>
+            </div>
+
+            <!-- Третий фильм -->
+            <div class="movie-card">
+                <a href="/films/charles-renaissance" class="movie-link">
+                    <img src="{{ url_for('static', filename='images/movie3.jpg') }}" alt="Чарльз: Эпоха возрождения (2024-2025)">
+                    <h2>Чарльз: Эпоха возрождения (2024-2025)</h2>
+                    <div class="rating">⭐ 2.0 📉</div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <p>© Leon4ik Studio</p>
+    </footer>
+</body>
+</html>
